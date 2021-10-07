@@ -1,6 +1,6 @@
 # Cv generator and collector
 
-You can easaly create you're cv, edit it and store it, as well as push tje button 'view' to see print preview in a nice cv template.
+You can easaly create you're cv, edit it and store it, as well as push the button 'view' to see print preview in a nice cv template.
 
 ## Steps to get this project running locally on you're machine:
 
