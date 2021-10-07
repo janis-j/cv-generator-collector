@@ -1,0 +1,116 @@
+html,
+body {
+  height: fit-content;
+}
+body {
+  margin: 0;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+  position: absolute;
+  left: 25%;
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 1px;
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #55608f;
+}
+.list_table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+.list_table tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+.list_table {
+    margin-top: 8%;
+    font-size: 20px;
+}
+button {
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: background 400ms;
+    transition: background 400ms;
+    color: #fff;
+    background-color: #6200ee;
+    font-size: 20px;
+    padding: 11px;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+.ripple {
+    background-position: center;
+    -webkit-transition: background 0.8s;
+    transition: background 0.8s;
+  }
+.ripple:hover {
+    background: #6200ee radial-gradient(circle, transparent 1%, #6200ee 1%) center/15000%;
+  }
+.ripple:active {
+    background-color: #cfb2f9;
+    background-size: 100%;
+    -webkit-transition: background 0s;
+    transition: background 0s;
+  }
+h3, a {
+    color: beige;
+}
+.success_message{
+    text-align: center;
+    color: palevioletred;
+    font-size: 18px;
+}
+input, textarea {
+    padding: 5px;
+    font-size: large;
+    border-color: darkgray;
+    border-radius: 0.25rem;
+}
+::placeholder {
+    color:#cfb2f9
+}
+.new_edit{
+    position: absolute;
+    left: 25%;
+}
+select {
+    font-size: 20px;
+    border-radius: 5px;
+}
+.list_pagination{
+    display: flex;
+    column-gap: 10px;
+}
