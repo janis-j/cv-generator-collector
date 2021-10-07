@@ -1,12 +1,12 @@
 # Cv generator and collector
 
-You can easaly create you're cv, edit it and store it, as well as push the button 'view' to see print preview in a nice cv template.
+You can easelly create your cv, edit it and store it, as well as push the button 'view' to see print preview in a nice cv template.
 
 ## Steps to get this project running locally on you're machine:
 
 ### 1. Clone GitHub repo using the repository url.
 
-Find a directory (folder)on your computer where you want to store the project. I make use of Laragon, so all my projects are inside a folder called www/, that is where I run the following command, which will pull the project from github and create a copy of it on my local computer at the “www” directory.
+Find a directory (folder)on your computer where you want to store the project. For example, you can use Laragon, where all projects are inside a folder called www/, that is where you run the following command, which will pull the project from github and create a copy of it on my local computer at the “www” directory.
 
 `git clone https://github.com/janis-j/cv-generator-collector.git`
 
