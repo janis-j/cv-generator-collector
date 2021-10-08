@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Services\CvCreateService;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use App\Http\Requests\StoreCvRequest;
 use Illuminate\View\View;
 

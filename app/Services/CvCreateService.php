@@ -10,13 +10,13 @@ class CvCreateService
 {
     private User $user;
 
-    public function userCreate(array $request)
+    public function userCreate(array $request): void
     {
         $this->user = new User($request);
         $this->user->save();
     }
 
-    public function addEducation(array $request)
+    public function addEducation(array $request): void
     {
         foreach($request['school_name'] as $key => $value){
             $education = new Education(
@@ -33,7 +33,7 @@ class CvCreateService
         }
     }
 
-    public function addWork(array $request)
+    public function addWork(array $request): void
     {
         foreach($request['company_name'] as $key => $value){
             $work = new WorkExperiance(

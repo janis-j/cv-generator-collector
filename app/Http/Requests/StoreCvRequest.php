@@ -11,7 +11,7 @@ class StoreCvRequest extends FormRequest
         return true;
     }
 
-    public function rules()
+    public function rules(): array
     {
         return [
         'name' => 'required',
@@ -37,7 +37,7 @@ class StoreCvRequest extends FormRequest
         ];
     }
 
-    public function messages()
+    public function messages(): array
     {
         return [
             'working_hours.*.numeric' => 'Must be numeric',

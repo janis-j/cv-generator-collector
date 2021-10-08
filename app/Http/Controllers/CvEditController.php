@@ -6,7 +6,10 @@ use App\Models\User;
 use App\Services\CvCreateService;
 use App\Services\CvDeleteService;
 use App\Services\CvEditService;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\View\View;
 
 class CvEditController extends Controller
 {
@@ -21,7 +24,7 @@ class CvEditController extends Controller
         $this->cvCreateService = $cvCreateService;
     }
 
-    public function main(User $user)
+    public function main(User $user): View
     {
         $jobs = $this->cvEditService->getWork($user);
         $educations = $this->cvEditService->getEducation($user);
@@ -32,7 +35,7 @@ class CvEditController extends Controller
         ]);
     }
 
-    public function update(User $user, Request $request)
+    public function update(User $user, Request $request): RedirectResponse
     {
         // echo "<pre>";
         // var_dump($request->all());die;

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Services\CvEditService;
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class CvViewController extends Controller
 {
@@ -15,7 +15,7 @@ class CvViewController extends Controller
         $this->cvEditService = $cvEditService;
     }
 
-    public function main(User $user)
+    public function main(User $user): View
     {
         $jobs = $this->cvEditService->getWork($user);
         $educations = $this->cvEditService->getEducation($user);

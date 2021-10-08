@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\CvListService;
+use Illuminate\View\View;
 
 class CvListController extends Controller
 {
@@ -13,7 +14,7 @@ class CvListController extends Controller
         $this->cvListService = $cvListService;
     }
 
-    public function main()
+    public function main(): View
     {
         return view('/cv_list',[
             'users' => $this->cvListService->getUsers()->sortable()->paginate(10)

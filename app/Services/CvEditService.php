@@ -9,11 +9,10 @@ use Illuminate\Database\Eloquent\Collection;
 
 class CvEditService
 {
-    private User $user;
     private Education $education;
     private WorkExperiance $workExperiance;
 
-    public function __construct(User $user, Education $education, WorkExperiance $workExperiance)
+    public function __construct(Education $education, WorkExperiance $workExperiance)
     {
         $this->education = $education;
         $this->workExperiance = $workExperiance;
